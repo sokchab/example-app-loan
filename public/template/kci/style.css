@@ -1,0 +1,162 @@
+@font-face{ font-family:'NiDA Khmer Empire'; src:url("font/NiDAKhmerEmpire.ttf"); }
+@font-face{ font-family:'Khmer MEF2'; src:url("font/KHMERMEF2.ttf"); }
+@font-face{ font-family:'Kh Battambang'; src:url("font/KH-BATTAMBANG.TTF"); }
+@font-face{ font-family:'Khmer OS Siemreap'; src:url("font/KhmerOSsiemreap.ttf"); }
+@font-face{ font-family:'Khmer Pen Svayreing'; src:url("font/KhmerPenSvayreing.ttf"); }
+@font-face{ font-family:'Khmer OS Niroth'; src:url("font/KhmerOSniroth.ttf"); }
+@font-face{ font-family:'Khmer OS Content'; src:url("font/KhmerOSContent-Regular.ttf"); }
+
+@font-face{ font-family:'Tacteing'; src:url("font/TACTENG.TTF"); }
+
+.__kh__{
+    font-family: "Khmer OS Siemreap";
+}
+
+.__TACTENG__{
+	font-family: "Tacteing";
+}
+.__MEF2__{
+    font-family: "Khmer MEF2";
+}
+
+.__Svayreing__{
+    font-family: "Khmer Pen Svayreing";
+}
+
+.__Niroth__{
+    font-family: "Khmer OS Niroth";
+}
+
+.__Content__{
+    font-family: "Khmer OS Content";
+}
+/* #li_province_processing{
+    display: none !important;
+} */
+
+
+.h-d_j-s-b{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+
+/*#li_province_wrapper .row:first-child{*/
+/*    display: none !important;*/
+/*}*/
+
+/*!*#li_province_wrapper #li_province_length{*!*/
+/*!*    display: none !important;*!*/
+/*!*}*!*/
+#table_tmp thead{
+    display: none !important;
+}
+
+/* #table_tmp_col thead{
+    display: none !important;
+} */
+
+.dataTables_processing{
+    display: none !important;
+}
+
+.border-black tr th,
+.border-black tr td{
+    border-color: black !important;
+}
+
+
+.mr__cus td{
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+
+.mr__cus1 td{
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+
+.mr__cus th{
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+
+.no-border--top thead tr th{
+    border-top: none !important;
+}
+
+.br-danger{
+    border: 1px solid #dc3545;
+}
+
+.br-primary{
+    border: 1px solid #007bff;
+}
+
+.br-success{
+    border: 1px solid #28a745;
+}
+
+.br-olive{
+    border: 1px solid #3d9970;
+}
+
+.br-indigo{
+    border: 1px solid #6610f2;
+}
+.br-fuchsia{
+    border: 1px solid #f012be;
+}
+.br-dark{
+    border: 1px solid #343a40;
+}
+.br-info{
+    border: 1px solid #17a2b8;
+}
+
+.br-navy{
+    border: 1px solid #001f3f;
+}
+
+.brr{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.brl{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.ml--1{
+    margin-left: -3px;
+}
+
+
+.not-top tr:first-child td{
+    border-top: none !important;
+}
+
+.pt-2px{
+    padding-top: 2px;;
+}
+
+.on-overdue td {
+    color: #007bff !important;
+    font-weight: bold;
+}
+
+.acc_box{
+    padding: 3px 20px !important;
+    border-top: 1px solid #343a40;
+    border-left: 1px solid #343a40;
+    border-bottom: 1px solid #343a40;
+}
+
+.acc_box_right{
+    border-right: 1px solid #343a40;
+}
+
+.d_un_100{
+    width: 100%;
+    border-bottom: 1px dashed #000;
+}
