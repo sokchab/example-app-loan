@@ -148,6 +148,23 @@
                                             </select>
                                         </div>
                                     </div>
+
+
+
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <label for="extra2" class="__kh__">ផ្សេងៗ</label>
+                                            <input type="text" class="form-control @error('extra2') is-invalid @enderror"
+                                                   value="{{ old('extra2',$data->extra2) }}"
+                                                   name="extra2" id="extra2" placeholder="Enter ...">
+                                            @error('extra2')
+                                            <label class="col-form-label text-danger" for="extra2">
+                                                <i class="far fa-times-circle"></i> {{ $message }}
+                                            </label>
+                                            @enderror
+                                        </div>
+                                    </div>
+
                                     
                                 </div>
                             </div>

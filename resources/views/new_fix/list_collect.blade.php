@@ -12,12 +12,12 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-sm-12">
-                        <table class="table table-condensed dataTable no-footer" 
+                        <table class="table table-condensed dataTable no-footer table-responsive" 
                             style="margin-top: 0 !important;"
                             id="table_tmp_col">
                             <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>11</th>
                                     <th>ក្រុមហ៊ុនផលិត</th>
                                     <th>ម៉ូដែល</th>
                                     <th>ពណ៍</th>
@@ -25,6 +25,8 @@
                                     <th>លេខម៉ាស៊ីន</th>
                                     <th>ឆ្នាំផលិត</th>
                                     <th>ផ្លាក់លេខ/ប័ណ្ណសម្គាល់</th>
+                                    <th>ផ្សេងៗ</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,14 +55,27 @@
                                         </td>
                                         <td>
                                             {{ $it->iden }}
-                                            <div class='float-right'>
-                                                <a href='{{ route("fix.coll.formCreate", ['__colecteral_value' => $it->id]) }}' class='btn btn-outline-primary btn-xs'>
-                                                    <i class='fas fa-pen mr-1'></i> កែប្រែ
+                                            
+                                        </td>
+
+                                        <td>
+                                            {{ $it->extra2 }}
+                                            
+                                        </td>
+
+
+                                        <td>
+                                            <div class='float-right1'>
+                                                <a href='{{ route("fix.coll.formCreate", ['__colecteral_value' => $it->id]) }}' 
+                                                    title="កែ"
+                                                    class='btn btn-outline-primary btn-xs'>
+                                                    <i class='fas fa-pen mr-1 ml-1'></i>
                                                 </a>
                                                 <a href="{{ route("fix.coll.deleteCollsFix", $it->id) }}" 
                                                     onclick="return confirm('Are you sure?')"
+                                                    title="លុប"
                                                     class='btn btn-outline-danger btn-xs'>
-                                                    <i class='fas fa-trash mr-1'></i> លុប
+                                                    <i class='fas fa-trash mr-1 ml-1'></i>
                                                 </a>
                                             </div>
                                         </td>

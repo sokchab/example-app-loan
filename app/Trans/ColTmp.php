@@ -26,7 +26,8 @@ class ColTmp extends Model
         'year', 
         'iden', 
         'extra', 
-        'type'
+        'type',
+        'extra2'
     ];
     
 }

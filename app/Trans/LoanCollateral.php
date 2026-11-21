@@ -28,7 +28,8 @@ class LoanCollateral extends Model
         'iden', 
         'extra',
         'loan',
-        'type'
+        'type',
+        'extra2'
     ];
 
 

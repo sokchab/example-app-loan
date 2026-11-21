@@ -183,6 +183,9 @@ class __TempRow__ extends Controller
             'collateral__year' => 'required|string|max:255',
             // 'collateral__number' => 'required|string|max:255',
             'collateral__extra' => 'required|string|max:255',
+
+                //2026-11-21
+            'extra2' => 'string|max:254',
         ]);
 
         if ($valid->fails())
@@ -198,6 +201,9 @@ class __TempRow__ extends Controller
         $cols->iden = $request->collateral__number;
         $cols->extra = $request->collateral__extra;
         $cols->type = $request->collateral__type;
+
+        //2026-11-21
+        $cols->extra2 = $request->extra2;
 
         $cols->save();
 
@@ -216,6 +222,9 @@ class __TempRow__ extends Controller
             'collateral__year' => 'required|string|max:255',
             // 'collateral__number' => 'required|string|max:255',
             'collateral__extra' => 'required|string|max:255',
+
+            //2026-11-21
+            'extra2' => 'string|max:254'
         ]);
 
         $ct = ColTmp::create([
@@ -227,6 +236,9 @@ class __TempRow__ extends Controller
             'iden' => $request->collateral__number,
             'extra' => $request->collateral__extra,
             'type' => $request->collateral__type,
+
+            //2026-11-21
+            'extra2' => $request->extra2,
         ]);
 
         return response()->json($ct, 200);
@@ -242,6 +254,7 @@ class __TempRow__ extends Controller
             'collateral__year' => 'required|string|max:255',
             // 'collateral__number' => 'required|string|max:255',
             'collateral__extra' => 'required|string|max:255',
+            'extra2' => 'string|max:254',
         ]);
 
         $ct = ColTmp::findOrFail($val);
@@ -253,7 +266,9 @@ class __TempRow__ extends Controller
         $ct->iden = $request->collateral__number;
         $ct->extra = $request->collateral__extra;
         $ct->type = $request->collateral__type;
-        
+
+        //2026-11-21
+        $ct->extra2 = $request->extra2;
         $ct->save();
 
         return response()->json($ct, 200);

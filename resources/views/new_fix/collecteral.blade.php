@@ -109,7 +109,7 @@
                                            @enderror
                                     </div>
                                 </div>
-                                <div class="col-sm-8">
+                                <div class="col-sm-4">
                                     <div class="form-group __kh__">
                                         <label for="collateral__number">ផ្លាក់លេខ/ប័ណ្ណសម្គាល់</label>
                                         <input type="text" class="form-control"
@@ -133,6 +133,20 @@
                                             <option value="1" {{  old('collateral__type', $cols->type) == 1 ? "selected" : "" }}>ម៉ូតូ</option>
                                             <option value="2" {{  old('collateral__type', $cols->type) == 2 ? "selected" : "" }}>ឡាន</option>
                                         </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-8">
+                                    <div class="form-group __kh__">
+                                        <label for="extra2">ផ្សេងៗ</label>
+                                        <input type="text" class="form-control"
+                                               name="extra2" value="{{ old('extra2', $cols->extra2) }}"
+                                               id="extra2" placeholder="Enter ...">
+
+                                            @error('extra2')
+                                               <label>{{ $message }}</label>
+                                           @enderror
                                     </div>
                                 </div>
 

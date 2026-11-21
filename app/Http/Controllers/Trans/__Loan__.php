@@ -144,7 +144,10 @@ class __Loan__ extends Controller
                 'iden' => $row->iden,
                 'extra' => $row->extra,
                 'loan' => $loan->id,
-                'type' => $row->type
+                'type' => $row->type,
+
+                ////2026-11-21
+                'extra2' => $row->extra2,
             ]);
         }
 
@@ -266,6 +269,9 @@ class __Loan__ extends Controller
            'col__year' => 'required|string|max:255',
         //    'col__plate' => 'required|string|max:255',
            'col__extra' => 'required|string|max:255',
+
+           //2026-11-21
+           'extra2' => 'string|max:254',
         ]);
 
         $d = LoanCollateral::findOrFail($id);
@@ -278,6 +284,10 @@ class __Loan__ extends Controller
         $d->iden = $request->col__plate;
         $d->extra = $request->col__extra;
         $d->type = $request->col__type;
+
+        //2026-11-21
+        $d->extra2 = $request->extra2;
+
         $d->save();
 
         return back()->with(['message' => "($d->model), Create Completed."]);
@@ -696,6 +706,9 @@ class __Loan__ extends Controller
             'col__year' => 'required|string|max:255',
             //'col__plate' => 'required|string|max:255',
             'col__extra' => 'required|string|max:255',
+
+            //2026-11-21
+            'extra2' => 'string|max:254'
         ]);
 
         $d = new LoanCollateral();
@@ -708,6 +721,10 @@ class __Loan__ extends Controller
         $d->extra = $request->col__extra;
         $d->loan = $id;
         $d->type = $request->col__type;
+
+        //2026-11-21
+        $d->extra2 = $request->extra2; 
+
         $d->save();
 
         return back()->with(['message' => "($d->model), Create Completed."]);
