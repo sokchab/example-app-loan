@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -197,6 +198,8 @@ return [
          * Package Service Providers...
          */
         'Hel'  => App\Helpers\Helper::class,
+
+        'Carbon' => Carbon::class,
         
     ])->toArray(),
 

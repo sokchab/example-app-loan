@@ -52,6 +52,7 @@ Route::prefix("history")->group(function(){
 Route::get('/', 'App\Http\Controllers\CoDashboard@__index')->name('root');
 
 //Auth::routes();
+Route::get('/home', 'App\Http\Controllers\CoDashboard@__index')->name('home');
 Route::get('/dashboard', 'App\Http\Controllers\CoDashboard@__index')->name('dashboard');
 Route::get('/profile', 'App\Http\Controllers\CoDashboard@__profile')->name('profile');
 Route::put('/profile/update', 'App\Http\Controllers\CoDashboard@__profile_update')->name('profile.update');
